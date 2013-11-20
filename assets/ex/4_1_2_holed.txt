@@ -1,0 +1,20 @@
+#include <iostream>
+
+【--1--】
+
+int main()
+{
+	std::cout << "二つの整数の和を計算します。" << std::endl;
+
+	int a, b;
+	std::cin >> a >> b;
+
+	std::cout << plus( a, b ) << std::endl;
+
+	return 0;
+}
+
+int plus( const int a, const int b )
+{
+	return a + b;
+}

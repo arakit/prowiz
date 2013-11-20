@@ -1,0 +1,32 @@
+#include <iostream>
+
+class CBase
+{
+public:
+	【--1--】 void thisIs()
+	{
+		std::cout << "基底クラスのオブジェクトです。" << std::endl;
+		return;
+	}
+};
+
+class CChild : public CBase
+{
+public:
+	void thisIs() override
+	{
+		std::cout << "派生クラスのオブジェクトです。" << std::endl;
+		return;
+	}
+};
+
+int main()
+{
+	CBase a;
+	a.thisIs();
+
+	CChild b;
+	b.thisIs();
+
+	return 0;
+}

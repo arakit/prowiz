@@ -1,0 +1,11 @@
+#include <iostream>
+
+int main()
+{
+	std::cout << "2 * 5 - 13 / 4 + 12 % 5 の計算結果を答えてください。" << std::endl;
+	std::cout << "答えは " << 2 * 5 - 13 / 4 + 13 % 5 << " です。" << std::endl;
+
+	return 0;
+}
+
+【--1--】

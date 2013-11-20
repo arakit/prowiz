@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main()
+{
+	int a = 1;
+	int &b = a;
+	b = 2;
+
+	// 出力される値は何と何か
+	std::cout << a << ' ' << b << std::endl;
+
+	return 0;
+}
+
+【--1--】

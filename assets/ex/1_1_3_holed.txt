@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main()
+{
+	std::cout << "カンマで区切られた三つの整数を読み込み、その和を求めます。" << std::endl;
+
+	int a, b, c;
+	【--1--】 dummy;
+
+	std::cin >> a >> dummy >> b >> dummy >> c;
+	std::cout << a + b + c << std::endl;
+
+	return 0;
+}

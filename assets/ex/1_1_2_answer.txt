@@ -1,0 +1,8 @@
+getline
+
+getline
+gets
+getc
+readln
+
+getc は一文字を受け取ります。また、gets は C 言語の関数です。

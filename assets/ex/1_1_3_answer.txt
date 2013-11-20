@@ -1,0 +1,8 @@
+char
+
+char
+int
+string
+double
+
+一つのカンマを読み込んでくれるような型です。

@@ -1,0 +1,8 @@
+int, int
+
+int, int
+int
+void
+double, double
+
+関数ポインタは、戻り値の型と引数の型に関する情報が必要です。

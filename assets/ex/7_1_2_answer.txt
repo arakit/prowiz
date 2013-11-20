@@ -1,0 +1,8 @@
+tmp->getNext()
+
+tmp->getNext()
+nullptr
+pos
+tmp->getNext()->getNext()
+
+erase 操作では、削除位置の直前のノードの next が、削除位置の直後のノードとなるようにポインタを張り替える必要があります。

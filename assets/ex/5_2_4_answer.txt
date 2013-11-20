@@ -1,0 +1,10 @@
+new CCat(), new CDog(), new CCat()
+
+new CCat(), new CDog(), new CCat()
+CCat(), CDog(), CCat()
+new IAnimal(), new IAnimal(), new IAnimal()
+new IAnimal( CDog ), new IAnimal( CCat ), new IAnimal( CDog )
+
+子クラスへのポインタは、親クラスのポインタ型に代入することができます。
+また、オーバーライドされた関数を呼び出す場合、実際の型に合ったものが呼び出されます。
+この振る舞いを多態性（ポリモーフィズム）といいます。

@@ -1,0 +1,42 @@
+#include <iostream>
+
+class IAnimal
+{
+public:
+	virtual void cry() = 0;;
+};
+
+class CCat : public IAnimal
+{
+public:
+	virtual void cry() override
+	{
+		std::cout << "にゃー" << std::endl;
+		return;
+	}
+};
+
+class CDog : public IAnimal
+{
+public:
+	virtual void cry() override
+	{
+		std::cout << "わん！" << std::endl;
+		return;
+	}
+};
+
+int main()
+{
+	// にゃー、わん！、にゃー　の順で表示されるようにしてください。
+	
+	IAnimal *animals[] = { 【--1--】 };
+
+	for ( int i = 0; i < 3; i++ )
+	{
+		animals[i] -> cry();
+		delete animals[i];
+	}
+
+	return 0;
+}

@@ -1,0 +1,8 @@
+virtual
+
+virtual
+const
+static
+base
+
+メンバ関数をオーバーライドする場合、親クラスでの関数は仮想関数でなければなりません。

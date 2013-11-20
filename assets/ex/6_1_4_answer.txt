@@ -1,0 +1,11 @@
+j = i
+target = j
+
+j = i
+j = 0
+j = 1
+target = j
+ary[j] = ary[ target ]
+target = i
+
+整列が完了している範囲を壊さないようにしましょう。

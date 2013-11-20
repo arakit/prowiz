@@ -1,0 +1,29 @@
+#include <iostream>
+
+class CClass
+{
+【--1--】:
+	int value;
+
+【--2--】:
+	void setValue( const int v )
+	{
+		value = v;
+		return;
+	}
+
+	int getValue()
+	{
+		return value;
+	}
+};
+
+int main()
+{
+	CClass a;
+	a.setValue( 12 );
+	
+	std::cout << a.getValue() << std::endl;
+
+	return 0;
+}

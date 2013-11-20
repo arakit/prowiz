@@ -1,0 +1,18 @@
+#include <iostream>
+
+int f( const 【--1--】 )
+{
+	return a * a;
+}
+
+int main()
+{
+	std::cout << "整数の二乗を計算します。" << std::endl;
+	
+	int a;
+	std::cin >> a;
+
+	std::cout << f( a ) << std::endl;
+
+	return 0;
+}

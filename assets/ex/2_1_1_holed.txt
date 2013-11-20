@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main()
+{	
+	const int n = 5;
+
+	std::cout << "n は";
+	if ( 【--1--】 )
+	{
+		std::cout << "奇";
+	}
+	else
+	{
+		std::cout << "偶";
+	}
+	std::cout << "数です。" << std::endl;
+
+	return 0;
+}

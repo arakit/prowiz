@@ -1,0 +1,31 @@
+#include <iostream>
+
+class CClass
+{
+private:
+	int value;
+
+public:
+	CClass( const int v ) : value( v ) {};
+
+	CClass & 【--1--】 += ( const int a )
+	{
+		value += a;
+		return *this;
+	}
+
+	void print() const
+	{
+		std::cout << value << std::endl;
+	}
+};
+
+int main()
+{
+	CClass c( 5 );
+	c += 7;
+	c.print();
+
+	return 0;
+}
+

@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main()
+{
+	std::cout << "入力された整数の奇遇を判定します。" << std::endl;
+
+	int n;
+	std::cin >> n;
+
+	std::cout << "入力された値は" << ( n % 2 【--1--】 "奇" : "偶" ) << "数です。" << std::endl;
+
+	return 0;
+}

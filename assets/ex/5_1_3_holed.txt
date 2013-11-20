@@ -1,0 +1,42 @@
+#include <iostream>
+
+class CClass
+{
+private:
+	int *p;
+
+public:
+	CClass( const int v ) : p( new int( v ) ) {};
+
+	~CClass()
+	{
+		delete p;
+		return;
+	}
+
+	// コピーコンストラクタ
+	CClass( const CClass &rhs )
+	{		
+		【--1--】
+
+		return;
+	}
+
+	void print() const
+	{
+		std::cout << *p << std::endl;
+		
+		return;
+	}
+};
+
+int main()
+{
+	CClass a( 5 );
+	a.print();
+
+	CClass b = a;
+	b.print();
+
+	return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+
+int multi( const int a, const 【--1--】 )
+{
+	// a の b 倍を計算する
+	// b が省略された場合は二倍する
+	
+	return a * b;
+}
+
+int main()
+{
+	std::cout << multi( 5, 10 ) << std::endl;
+	std::cout << multi( 7 ) << std::endl;
+
+	return 0;
+}

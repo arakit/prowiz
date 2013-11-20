@@ -1,0 +1,40 @@
+#include <iostream>
+
+bool isPrime( long long  n )
+{
+	if ( n < 2 )
+	{
+		return false;
+	}
+
+	for ( long long i = 2; i * i <= n; i++ )
+	{
+		if ( 【--1--】 )
+		{
+			return false;
+		}
+	}
+
+	return true;
+}
+
+int main()
+{
+	std::cout << "入力された値が素数かどうかを判定します。" << std::endl;
+
+	int n;
+	std::cin >> n;
+
+	std::cout << n << " は素数";
+	if ( isPrime( n ) )
+	{
+		std::cout << "です。";
+	}
+	else
+	{
+		std::cout << "ではありません。";
+	}
+	std::cout << std::endl;
+
+	return 0;
+}

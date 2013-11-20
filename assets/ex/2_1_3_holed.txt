@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main()
+{
+	// 1 から 10 までの数を改行区切りで表示したいです。
+	// 空欄に当てはまるプログラムを答えて下さい。
+
+	for ( int i = 1; 【--1--】; i++ )
+	{
+		std::cout << i << std::endl;
+	}
+
+	return 0;
+}

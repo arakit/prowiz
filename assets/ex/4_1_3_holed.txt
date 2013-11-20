@@ -1,0 +1,23 @@
+#include <iostream>
+
+int f( int a )
+{
+	if ( a == 0 )
+	{
+		return 0;
+	}
+
+	return 【--1--】;
+}
+
+int main()
+{
+	std::cout << "1 から、入力された整数までの和を計算します。" << std::endl;
+
+	int a;
+	std::cin >> a;
+
+	std::cout << "1 から " << a << " までの和は " << f( a ) << " です。" << std::endl;
+
+	return 0;
+}

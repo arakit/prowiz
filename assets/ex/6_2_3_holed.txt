@@ -1,0 +1,66 @@
+#include <iostream>
+
+// マージソートというソーティングアルゴリズムです。
+// 区間を半分に区切っていき、それぞれを再帰的にマージソートします。
+// その後、ソートされた二つの配列をマージすることで全体がソート済みになるようにします。
+
+void merge( int * const, int * const, int * const );
+
+void my_sort( int * const left, int * const right )
+{
+	if ( right - left <= 1 )
+	{
+		return;
+	}
+
+	int * const middle = left + ( right - left ) / 2;
+	my_sort( left, middle );
+	【--1--】
+	merge( left, middle, right );
+
+	return;
+}
+
+void merge( int * const left, int * const middle, int * const right )
+{
+	const int N1 = middle - left, N2 = right - middle;
+
+	int * const ary1 = new int [ N1 + 1 ], * const ary2 = new int [ N2 + 1 ];
+	ary1[ N1 ] = ary2[ N2 ] = 9999;
+
+	for ( int i = 0; i < middle - left; i++ )
+	{
+		ary1[i] = *( left + i );
+	}
+	for ( int i = 0; i < right - middle; i++ )
+	{
+		【--2--】
+	}
+
+	int i = 0, j = 0;
+	for ( int *p = left; p < right; p++ )
+	{
+		*p = ary1[i] < ary2[j] ? ary1[ i++ ] : ary2[ j++ ];
+	}
+
+	delete [] ary1;
+	delete [] ary2;
+
+	return;
+}
+
+int main()
+{
+	const int N = 20;
+	int ary[] = {18,13,47,21,1,2,3,43,4,20,37,44,22,50,28,39,33,18,28,1};
+
+	my_sort( ary, ary + N );
+
+	for ( int i = 0; i < N; i++ )
+	{
+		std::cout << ary[i] << ( i + 1 < N ? ", " : "\n" );
+	}
+	std::cout << std::flush;
+
+	return 0;
+}

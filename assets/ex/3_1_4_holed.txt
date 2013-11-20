@@ -1,0 +1,15 @@
+#include <iostream>
+
+const int DAYS[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
+int main()
+{
+	std::cout << "入力された月の、平年での日数を表示します。" << std::endl;
+
+	int month;
+	std::cin >> month;
+
+	std::cout << 【--1--】 << " 日あります。" << std::endl;
+
+	return 0;
+}

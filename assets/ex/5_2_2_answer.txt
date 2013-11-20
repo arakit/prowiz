@@ -1,0 +1,8 @@
+: public CBase
+
+: public CBase
+* public CBase
+public CBase
+（空欄）
+
+CChild は CBase を継承したクラスです。

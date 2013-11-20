@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+	std::cout << "入力された整数の桁数を求めます。" << std::endl;
+
+	int n;
+	std::cin >> n;
+
+	int digits = 0;
+	while ( n )
+	{
+		digits++;
+		【--1--】;
+	}
+
+	std::cout << digits << " 桁です。" << std::endl;
+
+	return 0;
+}

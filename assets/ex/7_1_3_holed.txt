@@ -1,0 +1,91 @@
+#include <iostream>
+
+// 単方向リストというデータ構造です。
+// リストを構成するノードは、そのノードの値と次のノードへのポインタをもちます。
+// 末尾となるノードは nullptr を保持します。
+
+class CList
+{
+private:	
+	class Node
+	{
+	private:
+		const int value;
+		Node *next;
+
+	public:
+		Node( int v ) : value( v ), next( nullptr ) {};
+		~Node() { delete next; };
+		int getValue() const { return value; };
+		void setNext( Node * const p ) { next = p; };
+		Node * getNext() const { return next; };
+	};
+
+	int size;
+	Node *head;
+
+public:
+	CList() : size( 0 ), head( new Node( 0 ) ) {};
+	~CList() { delete head; };
+
+	void insert( const unsigned int pos, const int value );
+	void erase( const unsigned int pos );
+	void printValues();
+};
+
+/* CList メンバ関数 */
+void CList::insert( const unsigned int pos, const int value )
+{
+	Node * new_node = new Node( value );
+
+	Node *target = head;
+	for ( int i = 0; i < pos && i < size; i++ )
+	{
+		target = target->getNext();
+	}
+
+	new_node->setNext( target->getNext() );
+	target->setNext( new_node );
+
+	size++;
+
+	return;
+}
+
+void CList::erase( const unsigned int pos )
+{
+	if ( size == 0 )
+	{
+		return;
+	}
+
+	Node * target = head;
+	for ( int i = 0; i < pos && i < size - 1; i++ )
+	{
+		target = target->getNext();
+	}
+
+	Node * tmp = target->getNext();
+	target->setNext( tmp->getNext() );
+	tmp->setNext( nullptr );
+	delete tmp;
+
+	size--;
+
+	return;
+}
+
+void CList::printValues()
+{
+	// リストを先頭から順に辿り、各ノードの値を順に出力する関数
+	
+	Node * p = head->getNext();
+	for ( int i = 0; i < size; i++ )
+	{
+		std::cout << p->getValue() << ( i + 1 < size ? ", " : "\n" );
+		【--1--】
+	}
+	std::cout << std::flush;
+
+	return;
+}

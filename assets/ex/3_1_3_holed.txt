@@ -1,0 +1,20 @@
+#include <iostream>
+
+void f( int * const p )
+{
+	*p *= *p;
+	return;
+}
+
+int main()
+{
+	std::cout << "整数の二乗を計算します。" << std::endl;
+
+	int a;
+	std::cin >> a;
+	f( 【--1--】 );
+	
+	std::cout << a << std::endl;
+
+	return 0;
+}

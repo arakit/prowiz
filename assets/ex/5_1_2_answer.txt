@@ -1,0 +1,9 @@
+CClass
+~CClass
+
+CClass
+Constructor
+new
+~CClass
+Destructor
+delete

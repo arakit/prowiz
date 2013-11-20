@@ -1,0 +1,25 @@
+#include <iostream>
+
+class CClass
+{
+	int value;
+
+public:
+	CClass( int v ) : value( v ) {};
+
+	void printValue() const
+	{
+		std::cout << value << std::endl;
+		return;
+	}
+};
+
+int main()
+{
+	CClass a( 10 );
+
+	// a のもつ value の値を表示するにはどうすればよいですか。
+	【--1--】
+
+	return 0;
+}

@@ -1,0 +1,31 @@
+#include <iostream>
+
+class CBase
+{
+protected:
+	int a;
+
+public:
+	CBase( int a ) : a( a ) {};
+};
+
+class CClass 【--1--】
+{
+	int b;
+
+public:
+	CClass( int a, int b ) : CBase( a ), b( b ) {};
+
+	int sum() const
+	{
+		return a + b;
+	}
+};
+
+int main()
+{
+	CClass c( 10, 25 );
+	std::cout << c.sum() << std::endl;
+
+	return 0;
+}

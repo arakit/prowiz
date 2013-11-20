@@ -1,0 +1,13 @@
+my_sort( middle, right );
+ary2[i] = *( middle + i );
+
+my_sort( middle, right );
+my_sort( left, right );
+my_sort( middle + 1, right );
+ary2[i] = *( middle + i );
+ary2[i] = *( left + i );
+ary2[i] = i;
+
+区切った区間の左右に再帰的に同じ処理を適用する必要があります。
+merge 操作では、分割されたソート済み区間二つを受取り、その場所に結果を格納しています。
+そのため、作業途中でデータが上書きされないよう、それぞれの区間から予めデータをコピーしておきます。

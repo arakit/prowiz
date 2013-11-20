@@ -1,0 +1,8 @@
+Fizz, 7, FizzBuzz
+
+Fizz, 7, FizzBuzz
+Buzz, 7, FizzBuzz
+3, 7, FizzBuzz
+Fizz, Buzz, FizzBuzz
+
+! は論理否定であり、C++ では 0 以外の値は真と見なされます。

@@ -1,0 +1,14 @@
+#include <iostream>
+#include <iomanip>
+
+int main()
+{
+	std::cout << "整数 a, b を読み込み、a / b の値を小数点以下五桁で表示します。" << std::endl;
+
+	int a, b;
+	std::cin >> a >> b;
+
+	std::cout << std::fixed << std::setprecision( 【--1--】 ) << (double)a / b << std::endl;
+
+	return 0;
+}

@@ -1,0 +1,6 @@
+operator
+
+operator
+plus
+function
+static

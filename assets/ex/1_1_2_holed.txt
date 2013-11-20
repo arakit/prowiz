@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main()
+{
+	std::cout << "空白を含む一行を読み込み、それを表示します。" << std::endl;
+
+	char line[1024];
+	std::cin.【--1--】( line, sizeof( line ) );
+
+	std::cout << line << std::endl;
+
+	return 0;
+}

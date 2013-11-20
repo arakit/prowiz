@@ -1,0 +1,6 @@
+new long long [n]
+
+new long long [n]
+long long [n]
+new long long ary[n]
+new long long (n)

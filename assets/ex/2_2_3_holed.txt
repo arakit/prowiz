@@ -1,0 +1,31 @@
+#include <iostream>
+
+int main()
+{
+	// i が 3, 7, 30 のときの出力結果の組み合わせとして正しいものを選択せよ。
+	
+	for ( int i = 1; i <= 50; i++ )
+	{
+		if ( !( i % 3 ) )
+		{
+			std::cout << "Fizz";
+		}
+		else if ( !( i % 5 ) )
+		{
+			std::cout << "Buzz";
+		}
+		else if ( !( i % 15 ) )
+		{
+			std::cout << "FizzBuzz";
+		}
+		else
+		{
+			std::cout << i;
+		}
+		std::cout << std::endl;
+	}
+
+	return 0;
+}
+
+【--1--】

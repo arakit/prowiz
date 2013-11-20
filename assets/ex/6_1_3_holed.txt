@@ -1,0 +1,41 @@
+#include <iostream>
+
+int main()
+{
+	// 番兵を用いた線径探索のコードです。
+	// 番兵として 9999 を用います。
+	
+	const int N = 20;
+	int ary[] = {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,9999};
+
+	for ( int i = 0; i < N; i++ )
+	{
+		std::cout << ary[i] << ( i + 1 < N ? ", " : "\n" );
+	}
+	std::cout << std::flush;
+	std::cout << "入力された値を上記の配列から探索します。" << std::endl;
+
+	int a;
+	std::cin >> a;
+
+	int pos;
+	for ( pos = 0; pos <= N; pos++ )
+	{
+		if ( ary[ pos ] == a )
+		{
+			break;
+		}
+	}
+
+	if ( 【--1--】 )
+	{
+		std::cout << "見つかりました。";
+	}
+	else
+	{
+		std::cout << "見つかりませんでした。";
+	}
+	std::cout << std::flush;
+
+	return 0;
+}

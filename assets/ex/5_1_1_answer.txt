@@ -1,0 +1,8 @@
+a.printValue();
+
+a.printValue();
+std::cout << a.value << std::endl;
+printValue();
+std::cout << a.printValue() << std::endl;
+
+printValue メンバ関数は、自身の value を出力する働きをします。

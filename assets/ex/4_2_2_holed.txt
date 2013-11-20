@@ -1,0 +1,25 @@
+#include <iostream>
+
+int f( const int a )
+{
+	return a;
+}
+
+int f( 【--1--】 )
+{
+	return a + b;
+}
+
+int f( 【--2--】 )
+{
+	return a * b * c;
+}
+
+int main()
+{
+	std::cout << f( 5 ) << std::endl;
+	std::cout << f( 2, 10 ) << std::endl;
+	std::cout << f( 2, 3, 4 ) << std::endl;
+
+	return 0;
+}

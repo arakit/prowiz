@@ -1,0 +1,8 @@
+int plus( const int, const int );
+
+int plus( const int, const int );
+plus( const int, const int );
+int plus();
+（空欄）
+
+関数のプロトタイプ宣言には、戻り値の型、関数名、引数の型の情報が必要です。

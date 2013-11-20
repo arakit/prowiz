@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="app_name">プロ Wiz!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_timeline">タイムライン</string>
+    <string name="title_activity_contribution">ContributionActivity</string>
+    <string name="title_activity_sign_up">新規登録</string>
+    <string name="title_activity_login">ログイン</string>
+    <string name="title_activity_login_selector">ログインor登録</string>
+    <string name="title_activity_home">ホーム</string>
+    <string name="title_activity_profile">プロフィール</string>
+    <string name="title_activity_search">検索</string>
+    <string name="title_activity_clothes">衣裳部屋</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+
+    <string name="imgview_content_description_default">画層が表示されます。</string>
+
+    <string name="app_welcome">ようこそ！</string>
+
+    <string name="app_monku">楽しいプログラミング！</string>
+
+</resources>

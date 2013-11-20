@@ -1,0 +1,8 @@
+p = p->getNext();
+
+p = p->getNext();
+p = p.getNext();
+p = head;
+p = p->getValue();
+
+ループ一回毎に、p が指すオブジェクトが次のノードに変化します。

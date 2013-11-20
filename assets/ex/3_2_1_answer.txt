@@ -1,0 +1,8 @@
+char *strs[]
+
+char *strs[]
+char strs[][]
+char[] strs[]
+char *strs
+
+strs ‚Í•¶š—ñƒŠƒeƒ‰ƒ‹‚Ì”z—ñ‚Å‚·

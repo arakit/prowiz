@@ -1,0 +1,9 @@
+const int a, const int b
+const int a, const int b, const int c
+
+const int b
+const int c
+const int a, const int b
+const int a, const int c
+const int b, const int c
+const int a, const int b, const int c

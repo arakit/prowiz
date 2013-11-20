@@ -1,0 +1,45 @@
+#include <iostream>
+
+int main()
+{
+	const int N = 20;
+	int ary[] = {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,9999};
+
+	for ( int i = 0; i < N; i++ )
+	{
+		std::cout << ary[i] << ( i + 1 < N ? ", " : "\n" );
+	}
+	std::cout << std::flush;
+	std::cout << "入力された値を上記の配列から探索します。" << std::endl;
+
+	int a;
+	std::cin >> a;
+
+	// ary[ lb ] <= a となる最大の lb を探す
+	int lb = 0, ub = N;
+	while ( lb + 1 < ub )
+	{
+		const int mid = 【--1--】;
+
+		if ( ary[ mid ] <= a )
+		{
+			lb = mid;
+		}
+		else
+		{
+			【--2--】;
+		}
+	}
+
+	if ( ary[ lb ] == a )
+	{
+		std::cout << "見つかりました。";
+	}
+	else
+	{
+		std::cout << "見つかりませんでした。";
+	}
+	std::cout << std::endl;
+
+	return 0;
+}

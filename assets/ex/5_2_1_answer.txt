@@ -1,0 +1,12 @@
+private
+public
+
+private
+public
+static
+void
+case
+hidden
+
+getValue には外部からアクセス可能でなければなりません。
+また、データメンバにはメンバ関数を介してアクセスする設計となっています（カプセル化といいます）。

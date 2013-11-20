@@ -1,0 +1,29 @@
+#include <iostream>
+
+const int N = 20;
+
+int main()
+{
+	int ary[] = {12,8,32,25,19,11,3,11,24,49,36,17,21,42,5,34,24,9,27,0};
+
+	for ( int i = 0; i < N; i++ )
+	{
+		for ( int j = 0; 【--1--】; j++ )
+		{
+			if ( !( ary[j] < ary[ j + 1 ] ) )
+			{
+				const int tmp = ary[j];
+				ary[j] = ary[ j + 1 ];
+				ary[ j + 1 ] = tmp;
+			}
+		}
+	}
+
+	for ( int i = 0; i < N; i++ )
+	{
+		std::cout << ary[i] << ( i + 1 < N ? ", " : "\n" );
+	}
+	std::cout << std::flush;
+
+	return 0;
+}

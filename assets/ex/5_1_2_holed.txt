@@ -1,0 +1,31 @@
+#include <iostream>
+
+class CClass
+{
+private:
+	int *p;
+
+public:
+	【--1--】( const int v ) : p( new int( v ) ) {};
+
+	【--2--】()
+	{
+		delete p;
+		return;
+	}
+
+	void print() const
+	{
+		std::cout << *p << std::endl;
+		
+		return;
+	}
+};
+
+int main()
+{
+	CClass a( 5 );
+	a.print();
+
+	return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main()
+{
+	std::cout << "奇数を入力してください。" << std::endl;
+
+	int n;
+	do
+	{
+		std::cin >> n;
+	}
+	while ( 【--1--】 );
+
+	std::cout << "入力された値は" << n << "です。" << std::endl;
+
+	return 0;
+}

@@ -1,0 +1,8 @@
+new_node
+
+new_node
+target
+head
+target->getNext()
+
+insert 操作では、挿入位置の直前のノードの next が新しいノード、新しいノードの next が挿入位置の直後のノードとなるようにポインタを張り替える必要があります。

@@ -1,0 +1,64 @@
+#include <iostream>
+
+void my_sort( int * const left, int * const right )
+{
+	// クイックソートのアルゴリズムです。
+	// 渡された範囲に対し、次の処理をします
+	// 1. ピボット呼ばれる値を一つ選ぶ
+	// 2. 範囲をピボット以下の値とそうでない値の二つに分ける
+	// 3. 別れた範囲に対して再帰的に同じ処理をする
+	
+	if ( right - left <= 1 )
+	{
+		return;
+	}
+
+	const int pivot = *( left + ( right - left ) / 2 );
+
+	int *l = left, *r = right - 1;
+	while ( true )
+	{
+		while ( *l < pivot )
+		{
+			【--1--】;
+		}
+		
+		while ( pivot < *r )
+		{
+			r--;
+		}
+
+		if ( r <= l )
+		{
+			【--2--】;
+		}
+
+		const int tmp = *l;
+		*l = *r;
+		*r = tmp;
+
+		l++;
+		r--;
+	}
+
+	my_sort( left, l );
+	my_sort( l, right );
+
+	return;
+}
+
+int main()
+{
+	const int N = 20;
+	int ary[] = {12,8,32,25,19,11,3,11,24,49,36,17,21,42,5,34,24,9,27,0};
+	
+	my_sort( ary, ary + N );
+
+	for ( int i = 0; i < N; i++ )
+	{
+		std::cout << ary[i] << ( i + 1 < N ? ", " : "\n" );
+	}
+	std::cout << std::flush;
+
+	return 0;
+}
